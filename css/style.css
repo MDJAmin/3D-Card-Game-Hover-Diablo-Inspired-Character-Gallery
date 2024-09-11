@@ -3,4 +3,34 @@
     src: url("../assets/Fonts/films.EXH_____.ttf");
   }
 
-  
+  figure {
+    width: 100%;
+    aspect-ratio: 1;
+    /* The aspect-ratio CSS property
+     allows you to define the preferred 
+     width-to-height ratio of an element. 
+     This property helps maintain a consistent
+      shape for the element, regardless of its 
+      size or the content inside it. 
+      By specifying an aspect ratio,
+       you can ensure that the element scales
+       responsively while keeping its proportions intact. */
+    margin: 0 0 60px;
+    padding: 5px 20px 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 100%;
+    cursor: pointer;
+    position: relative;
+    filter: drop-shadow(0 0 20px rgb(0 0 0/50%));
+  }
+  figure:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: top/cover;
+    transform-origin: bottom;
+    filter: brightness(0.9);
+    transition: 0.5s;
+  }
