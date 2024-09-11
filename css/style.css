@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Exoct";
+    font-family: "Exocet";
     src: url("../assets/Fonts/films.EXH_____.ttf");
   }
 
@@ -49,5 +49,20 @@
     object-position: top;
     filter: contrast(0.8) brightness(0.7);
     place-self: end center;
+    transition: 0.5s;
+  }
+
+  figcaption {
+    grid-area: 1/1;
+    width: calc(100% + 40px);
+    font-family: Exocet;
+    color: #fff;
+    font-size: min(32px, 5vmin);
+    text-align: center;
+    place-self: end center;
+    transform: perspective(500px) translateY(100%) rotateX(-90deg);
+    backface-visibility: hidden;
+    transform-origin: top;
+    background: #000;
     transition: 0.5s;
   }
