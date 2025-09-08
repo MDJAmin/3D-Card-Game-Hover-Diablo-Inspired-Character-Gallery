@@ -86,3 +86,26 @@ body {
   background: linear-gradient(#0000, rgb(50 50 50 / 88%)),
     url(../assets/Images/diablo-reaper-of-souls-mw-1360x768.jpg) top/cover;
 }
+
+.MDJAminDiv {
+  z-index: 4444;
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+}
+
+.MDJAmin {
+  text-decoration: none;
+  border-top: 1px dashed white !important;
+  border-bottom: 1px dashed white !important;
+  padding: 4px 2px;
+  color: rgba(204, 204, 204, 0.414);
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1.3em;
+  transition: all 0.5s;
+}
+
+.MDJAmin:hover {
+  color: white;
+}
